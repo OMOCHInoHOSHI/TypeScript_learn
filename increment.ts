@@ -22,6 +22,9 @@ function increment(num: number) {
 
   // これでコンパイラが通る
 
+  // 勝手にJSファイルが生成される
+  // increment.js
+
   // その前にpowershellで実行ポリシーを変更
   // Set-ExecutionPolicy RemoteSigned // 全体
   // Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  // 今のユーザ

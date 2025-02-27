@@ -15,10 +15,12 @@ function increment(num: number) {
     return num + 1;
   }
    
-  console.log(increment("999"));
+  console.log(increment(999));
 
   // tscがコンパイラによるチェック
   // tsc increment.ts
+
+  // これでコンパイラが通る
 
   // その前にpowershellで実行ポリシーを変更
   // Set-ExecutionPolicy RemoteSigned // 全体

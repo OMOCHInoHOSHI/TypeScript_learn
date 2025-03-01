@@ -13,6 +13,18 @@ function increment(num) {
 console.log(increment(999));
 // tscがコンパイラによるチェック
 // tsc increment.ts
+// これでコンパイラが通る
+// 勝手にJSファイルが生成される
+// increment.js
 // その前にpowershellで実行ポリシーを変更
 // Set-ExecutionPolicy RemoteSigned // 全体
 // Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  // 今のユーザ
+// <input id="email">の文字色を赤色にするDOM操作の例
+var emailInput = document.getElementById("email");
+// emailInput.style.color = "red";
+if (emailInput) {
+    emailInput.style.color = "red";
+}
+else {
+    console.error("Element with id 'email' not found.");
+}

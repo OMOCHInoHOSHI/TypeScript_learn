@@ -28,3 +28,27 @@ function increment(num: number) {
   // その前にpowershellで実行ポリシーを変更
   // Set-ExecutionPolicy RemoteSigned // 全体
   // Set-ExecutionPolicy RemoteSigned -Scope CurrentUser  // 今のユーザ
+
+
+  // <input id="email">の文字色を赤色にするDOM操作の例
+const emailInput = document.getElementById("email");
+// emailInput.style.color = "red";
+
+if (emailInput) {
+  emailInput.style.color = "bliue";
+} else {
+  console.error("Element with id 'email' not found.");
+}
+
+
+// 命令的なコード
+const list = document.createElement("ul");
+const apple = document.createElement("li");
+apple.innerText = "リンゴ";
+list.append(apple);
+const orange = document.createElement("li");
+orange.innerText = "オレンジ";
+list.append(orange);
+const grape = document.createElement("li");
+grape.innerText = "ぶどう";
+list.append(grape);

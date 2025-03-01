@@ -23,8 +23,19 @@ console.log(increment(999));
 var emailInput = document.getElementById("email");
 // emailInput.style.color = "red";
 if (emailInput) {
-    emailInput.style.color = "red";
+    emailInput.style.color = "bliue";
 }
 else {
     console.error("Element with id 'email' not found.");
 }
+// 命令的なコード
+var list = document.createElement("ul");
+var apple = document.createElement("li");
+apple.innerText = "リンゴ";
+list.append(apple);
+var orange = document.createElement("li");
+orange.innerText = "オレンジ";
+list.append(orange);
+var grape = document.createElement("li");
+grape.innerText = "ぶどう";
+list.append(grape);
